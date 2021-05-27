@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="co.anteia.anteiasdk">
+
+    <uses-feature android:name="android.hardware.camera.any" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:theme="@style/Theme.AnteiaSDK">
+        <activity android:name=".ui.aidetection.FaceDetectionActivity"/>
+        <activity android:name=".ui.aidetection.DocumentBackDetectionActivity" />
+        <activity android:name=".ui.aidetection.DocumentDetectionActivity" />
+        <activity android:name=".ui.confirmemail.EmailActivity" />
+        <activity android:name=".ui.termsandconditions.TermsAndConditionsActivity" />
+
+        <meta-data
+            android:name="anteia_sdk_document_model_name"
+            android:value="model_id" />
+
+        <activity android:name=".ui.dataentry.DataEntryActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AnteiaSDKMainActivity"
+            android:windowSoftInputMode="adjustPan" />
+    </application>
+
+</manifest>

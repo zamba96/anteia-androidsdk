@@ -1,0 +1,76 @@
+<resources>
+    <string name="app_name">AnteiaSDK</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="greeting_message">Hola!</string>
+    <string name="intro_message">Te daremos unos consejos para que el registro sea exitoso</string>
+    <string name="instructions_message">Ubícate en un sitio con buena luz, revisa que tu cámara y micrófono estén activos. Ten a mano tu documento de identidad</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="complete_fields_message">Ingresa los siguientes datos:</string>
+    <string name="phone">Número Celular</string>
+    <string name="lastname">Primer Apellido</string>
+    <string name="dni">Cédula</string>
+    <string name="next">Siguiente</string>
+    <string name="email">Correo electrónico</string>
+    <string name="welcome">Bienvenido</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="identity">Identidad \nConsultar la identidad y estado del dispositivo</string>
+    <string name="location">Ubicaciòn \nAcceder a tu ubicación aproximada</string>
+    <string name="camera">Cámara.  \nRelizar fotografìas y videos</string>
+    <string name="mic">Micròfono. \nGrabar sonido</string>
+    <string name="fingerprint">Identidad \nReconocimiento facial y datos biométricos</string>
+
+    <string name="tos">Doy mi consentimiento libre, expreso que he sido informado de los términos y condiciones, política de privacidad y tratamiento de datos sensibles. (leer más)</string>
+
+    <string name="welcome_first_text">¡La forma más segura para proteger tu inversión y  que nadie te suplante es el video!</string>
+    <string name="welcome_second_text">Tenga en cuenta que se le va a solicitar autorizar una serie de accesos  para hacer la vinculación, si no acepas alguno no podrás continuar con el proceso por temas regulatorios.</string>
+
+    <string name="check_your_email">Revisa tu correo</string>
+    <string name="activation">Verifica tu celular</string>
+    <string name="enter_the_code">Ingresa el código de seguridad que te hemos enviado a %1$s</string>
+
+    <string name="address">Dirección</string>
+    <string name="city">Ciudad</string>
+    <string name="country">País</string>
+    <string name="department">Departamento</string>
+
+    <string name="time_to_check_your_address">Es momento de verificar tu ubicación</string>
+
+    <string name="check_for_email">Confirma el mensaje que te hemos enviado a %1$s. Revisa tu carpeta de correos no deseados</string>
+    <string name="accept">Aceptar</string>
+    <string name="start">Comencemos</string>
+    <string name="resend_email"><u>Reenviar correo</u></string>
+    <string name="resend_sms"><u>Reenviar SMS</u></string>
+    <string name="code">Código</string>
+
+    <string name="change_address"><u>Ajustar dirección</u></string>
+
+    <string name="change_your_address">Ajustar tu dirección</string>
+    <string name="create_your_password">Crea tu contraseña</string>
+
+    <string name="modify_email_header">Ingrese los siguientes datos</string>
+
+    <string name="password_instructions">Usa minimo 8 carácteres combinando mayúsculas, minúsculas, números, un cáracter especial (!?@#$%&amp;)</string>
+
+    <string name="confirm_password">Confirmar contraseña</string>
+
+    <string name="password">Contraseña</string>
+
+    <string name="confirm">Confirmar</string>
+    <string name="modify_email">Modificar Correo</string>
+    <string name="modify_phone">Modificar Número</string>
+    <string name="resend_otp">Reenviar código</string>
+
+    <string name="show_your_id">Muestra tu documento dentro del recuadro</string>
+    <string name="front_first">Primero el frente</string>
+    <string name="now_back">Ahora el reverso</string>
+    <string name="inside_the_square">Dentro del recuadro</string>
+    <string name="show_your_face">Muestra tu cara dentro del recuadro</string>
+
+    <string name="wait_a_moment">Espera un momento</string>
+
+
+    <string name="reject">Rechazar</string>
+
+
+</resources>

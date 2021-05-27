@@ -1,0 +1,17 @@
+.gradle/
+.idea/caches
+.idea/libraries
+.idea/navEditor.xml
+*.apk
+*.aar
+*.ap_
+*.aab
+*.dex
+bin/
+gen/
+out/
+build/
+*.log
+.navigation/
+.gradle/
+.idea/

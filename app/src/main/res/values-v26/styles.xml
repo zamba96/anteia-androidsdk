@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="MyAutofilledHighlight" parent="">
+        <item name="android:autofilledHighlight">@drawable/round_edit_text</item>
+    </style>
+</resources>

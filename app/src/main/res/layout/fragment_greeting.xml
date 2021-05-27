@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:padding="@dimen/outter_layout_padding"
+        android:layout_height="match_parent"
+        android:theme="@style/ThemeOverlay.AnteiaSDK.FullscreenContainer"
+
+        android:background="@color/white"
+        tools:context=".ui.GreetingFragment">
+        <ImageButton
+            android:layout_width="30dp"
+            android:id="@+id/next_button"
+            android:src="@drawable/right_arrow_black"
+            android:background="@color/white"
+            android:scaleType="centerCrop"
+            android:layout_margin="16dp"
+
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_height="30dp"/>
+
+
+        <TextView
+            android:id="@+id/greeting_message_tv"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="40sp"
+
+            android:text="@string/greeting_message" />
+
+
+    </RelativeLayout>
+
+</layout>

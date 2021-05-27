@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:padding="@dimen/outter_layout_padding"
+        android:layout_height="match_parent"
+        tools:context=".ui.dataentry.DataEntryFragment">
+
+        <TextView
+            android:id="@+id/input_data_message_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:text="@string/time_to_check_your_address" />
+
+        <LinearLayout
+            android:id="@+id/input_data_linear_layout"
+            android:layout_marginTop="40dp"
+            android:layout_below="@id/input_data_message_tv"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:paddingEnd="40dp"
+            android:paddingStart="40dp"
+
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/address"
+                />
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:paddingEnd="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingStart="10dp"
+                android:background="@drawable/round_edit_text"
+                android:layout_height="45dp"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/city"
+                />
+            <com.google.android.material.textfield.TextInputEditText
+
+                android:layout_width="match_parent"
+                android:paddingEnd="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingStart="10dp"
+                android:background="@drawable/round_edit_text"
+                android:layout_height="45dp"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/country"
+                />
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:paddingEnd="10dp"
+                android:paddingTop="5dp"
+
+                android:paddingBottom="5dp"
+                android:paddingStart="10dp"
+                android:background="@drawable/round_edit_text"
+                android:layout_height="45dp"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/department"
+                />
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+
+                android:paddingEnd="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingStart="10dp"
+                android:background="@drawable/round_edit_text"
+                android:layout_height="45dp"/>
+
+
+        </LinearLayout>
+        <Button
+            android:layout_centerHorizontal="true"
+            android:text="@string/confirm"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/next_button"
+            android:layout_above="@id/change_address_tv"
+            android:background="@drawable/button_background"
+            />
+        <TextView
+            android:id="@+id/change_address_tv"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="16dp"
+            android:layout_centerHorizontal="true"
+
+            android:layout_width="wrap_content"
+            android:text="@string/change_address"
+            android:textColor="@color/purple"
+            android:layout_height="wrap_content"/>
+
+
+    </RelativeLayout>
+</layout>

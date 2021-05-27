@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/welcomeFlowFragmentFirst">
+    <fragment
+        android:id="@+id/greetingFragment"
+        android:name="co.anteia.anteiasdk.ui.GreetingFragment"
+        android:label="fragment_blank"
+        tools:layout="@layout/fragment_greeting" >
+        <action
+            android:id="@+id/action_greetingFragment_to_introFragment"
+            app:destination="@id/introFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/introFragment"
+        android:name="co.anteia.anteiasdk.ui.IntroFragment"
+        android:label="fragment_intro"
+        tools:layout="@layout/fragment_intro" >
+        <action
+            android:id="@+id/action_introFragment_to_instructionsFragment"
+            app:destination="@id/instructionsFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/instructionsFragment"
+        android:name="co.anteia.anteiasdk.ui.InstructionsFragment"
+        android:label="fragment_instructions"
+        tools:layout="@layout/fragment_instructions" >
+        <action
+            android:id="@+id/action_instructionsFragment_to_dataEntryFragment"
+            app:destination="@id/dataEntryFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/dataEntryFragment"
+        android:name="co.anteia.anteiasdk.ui.dataentry.DataEntryFragment"
+        android:label="fragment_data_entry"
+        tools:layout="@layout/fragment_data_entry" >
+        <action
+            android:id="@+id/action_dataEntryFragment_to_documentDetectionFragment"
+            app:destination="@id/documentDetectionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/faceDetectionFragment"
+        android:name="co.anteia.anteiasdk.ui.FaceDetectionFragment"
+        android:label="FaceDetectionFragment"
+        tools:layout="@layout/fragment_face_detection">
+        <action
+            android:id="@+id/action_faceDetectionFragment_to_confirmEmailFragment"
+            app:destination="@id/confirmEmailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/welcomeFragment"
+        tools:layout="@layout/fragment_welcome"
+        android:name="co.anteia.anteiasdk.ui.WelcomeFragment"
+        android:label="WelcomeFragment" />
+    <fragment
+        android:id="@+id/documentDetectionFragment"
+        android:name="co.anteia.anteiasdk.ui.DocumentDetectionFragment"
+        android:label="fragment_document_detection"
+        tools:layout="@layout/fragment_document_detection" >
+        <action
+            android:id="@+id/action_documentDetectionFragment_to_documentBackDetectionFragment"
+            app:destination="@id/documentBackDetectionFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/welcomeFlowFragmentFirst"
+        android:name="co.anteia.anteiasdk.ui.WelcomeFlowFragmentFirst"
+        android:label="fragment_welcome_flow_first"
+        tools:layout="@layout/fragment_welcome_flow_first"
+        app:startDestination="@id/action_welcomeFlowFirst_to_welcomeFlowFragmentSecond">
+        <action
+            android:id="@+id/action_welcomeFlowFirst_to_welcomeFlowFragmentSecond"
+            app:destination="@id/welcomeFlowFragmentSecond"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/welcomeFlowFragmentSecond"
+        android:name="co.anteia.anteiasdk.ui.WelcomeFlowFragmentSecond"
+        android:label="fragment_welcome_flow_second"
+        tools:layout="@layout/fragment_welcome_flow_second" >
+        <action
+            android:id="@+id/action_welcomeFlowFragmentSecond_to_termsAndConditionsFragment"
+            app:destination="@id/termsAndConditionsFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/termsAndConditionsFragment"
+        android:name="co.anteia.anteiasdk.ui.termsandconditions.TermsAndConditionsFragment"
+        android:label="fragment_terms_and_conditions"
+        tools:layout="@layout/fragment_terms_and_conditions" >
+        <action
+            android:id="@+id/action_termsAndConditionsFragment_to_greetingFragment"
+            app:destination="@id/greetingFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/confirmEmailFragment"
+        android:name="co.anteia.anteiasdk.ui.confirmemail.ConfirmEmailFragment"
+        android:label="ConfirmEmailFragment"
+        tools:layout="@layout/fragment_confirm_email"
+    >
+        <action
+            android:id="@+id/action_confirmEmailFragment_to_confirmPhoneFragment"
+            app:destination="@id/confirmPhoneFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+        <action
+            android:id="@+id/action_confirmEmailFragment_to_modifyEmailFragment"
+            app:destination="@id/modifyEmailFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+        <action
+            android:id="@+id/action_confirmEmailFragment_to_createPasswordFragment"
+            app:destination="@id/createPasswordFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/confirmPhoneFragment"
+        android:name="co.anteia.anteiasdk.ui.ConfirmPhoneFragment"
+        tools:layout="@layout/fragment_confirm_phone"
+        android:label="ConfirmPhoneFragment" >
+        <action
+            android:id="@+id/action_confirmPhoneFragment_to_checkAddressFragment"
+            app:destination="@id/checkAddressFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+        <action
+            android:id="@+id/action_confirmPhoneFragment_to_modifyPhoneFragment"
+            app:destination="@id/modifyPhoneFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/checkAddressFragment"
+        android:name="co.anteia.anteiasdk.ui.CheckAddressFragment"
+        tools:layout="@layout/fragment_check_address"
+        android:label="CheckAddressFragment" >
+        <action
+            android:id="@+id/action_checkAddressFragment_to_changeAddressFragment"
+            app:destination="@id/changeAddressFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+        <action
+            android:id="@+id/action_checkAddressFragment_to_createPasswordFragment"
+            app:destination="@id/createPasswordFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/changeAddressFragment"
+        android:name="co.anteia.anteiasdk.ui.ChangeAddressFragment"
+        tools:layout="@layout/fragment_change_address"
+        android:label="ChangeAddressFragment" >
+        <action
+            android:id="@+id/action_changeAddressFragment_to_createPasswordFragment"
+            app:destination="@id/createPasswordFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/createPasswordFragment"
+        android:name="co.anteia.anteiasdk.ui.CreatePasswordFragment"
+        tools:layout="@layout/fragment_create_password"
+        android:label="CreatePasswordFragment" >
+        <action
+            android:id="@+id/action_createPasswordFragment_to_welcomeFragment"
+            app:destination="@id/welcomeFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/modifyEmailFragment"
+        android:name="co.anteia.anteiasdk.ui.confirmemail.ModifyEmailFragment"
+        tools:layout="@layout/fragment_modify_email"
+        android:label="ModifyEmailFragment" >
+        <action
+            android:id="@+id/action_modifyEmailFragment_to_confirmEmailFragment"
+            app:destination="@id/confirmEmailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/modifyPhoneFragment"
+        android:name="co.anteia.anteiasdk.ui.ModifyPhoneFragment"
+        tools:layout="@layout/fragment_modify_phone"
+        android:label="ModifyPhoneFragment" >
+        <action
+            android:id="@+id/action_modifyPhoneFragment_to_confirmPhoneFragment"
+            app:destination="@id/confirmPhoneFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/documentBackDetectionFragment"
+        tools:layout="@layout/fragment_document_back_detection"
+        android:name="co.anteia.anteiasdk.ui.DocumentBackDetectionFragment"
+        android:label="DocumentBackDetectionFragment" >
+        <action
+            android:id="@+id/action_documentBackDetectionFragment_to_faceDetectionFragment"
+            app:destination="@id/faceDetectionFragment" />
+    </fragment>
+</navigation>

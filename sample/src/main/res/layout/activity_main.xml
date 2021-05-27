@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+
+        <Button
+            android:id="@+id/face_detection_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Face Detection"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@id/front_detection_button" />
+
+        <Button
+            android:id="@+id/front_detection_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Front detection"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@id/back_detection_button" />
+
+        <Button
+            android:id="@+id/back_detection_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back detection"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@id/data_entry_button" />
+        <Button
+            android:id="@+id/data_entry_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Data Entry"
+            android:layout_centerInParent="true" />
+        <Button
+            android:id="@+id/terminos_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Terminos"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/data_entry_button" />
+
+        <Button
+            android:id="@+id/email_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Validar email"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/terminos_button" />
+
+    </RelativeLayout>
+</layout>

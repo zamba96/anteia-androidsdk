@@ -1,0 +1,38 @@
+package co.anteia.anteiasdk.ui
+
+import android.os.Bundle
+import androidx.fragment.app.Fragment
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import androidx.databinding.DataBindingUtil
+import androidx.navigation.fragment.findNavController
+import co.anteia.anteiasdk.R
+import co.anteia.anteiasdk.databinding.FragmentGreetingBinding
+import co.anteia.anteiasdk.databinding.FragmentInstructionsBinding
+
+class InstructionsFragment : Fragment() {
+
+
+    override fun onCreateView(
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
+        val binding: FragmentInstructionsBinding = DataBindingUtil.inflate(inflater,
+                R.layout.fragment_instructions, container, false)
+
+        binding.nextButton.setOnClickListener {
+            nextFragment()
+        }
+        return binding.root
+        // Inflate the layout for this fragment
+
+    }
+
+    private fun nextFragment(){
+        findNavController().navigate(R.id.action_instructionsFragment_to_dataEntryFragment)
+    }
+
+
+
+}
